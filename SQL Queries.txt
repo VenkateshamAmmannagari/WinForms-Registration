@@ -1,0 +1,26 @@
+Create database LearningDB
+
+
+create table LoginUser (
+Id int identity,
+UserName nvarchar(100),
+UserPassword nvarchar(100),
+CreatedDate datetime,
+ModifiedDate datetime
+)
+
+select * from  LoginUser
+
+delete from LoginUser where id =2
+truncate table LoginUser 
+
+insert into LoginUser values('Schema','Technologies','schemaTech','2019-05-21 07:36:00','2019-05-21 07:36:00')
+
+select GETDATE()
+
+
+use LearningDB
+
+select * from UserLogin
+
+SELECT count(*) FROM UserLogin where UserName = 'Venkat' and userpassword = 'Schema@123'
